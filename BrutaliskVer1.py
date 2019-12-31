@@ -43,7 +43,7 @@ def BruteForce():
     
 
 # main loop
-# What does this block do?
+
 
 
 
